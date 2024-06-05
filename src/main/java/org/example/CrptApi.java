@@ -88,12 +88,18 @@ public class CrptApi {
         private DocumentDescription description;
         @SerializedName(value = "doc_id")
         private String docId;
+        @SerializedName(value = "doc_status")
         private String docStatus;
         private boolean importRequest;
+        @SerializedName(value = "owner_inn")
         private String ownerInn;
+        @SerializedName(value = "ticipant_inn")
         private String ticipantInn;
+        @SerializedName(value = "producer_inn")
         private String producerInn;
+        @SerializedName(value = "production_date")
         private String productionDate;
+        @SerializedName(value = "production_type")
         private String productionType;
         private String products;
 
@@ -108,13 +114,17 @@ public class CrptApi {
         }
          public static class DocumentProduct {
              private String certificate_document;
+             @SerializedName(value = "certificate_document_date")
              private String certificateDocumentDate;
              private String certificate_document_number;
              private String owner_inn;
              private String producer_inn;
              private String production_date;
+             @SerializedName(value = "tnved_code")
              private String tnvedCode;
+             @SerializedName(value = "uit_code")
              private String uitCode;
+             @SerializedName(value = "uitu_code")
              private String uituCode;
 
              public DocumentProduct(String certificate_document, String certificateDocumentDate,
